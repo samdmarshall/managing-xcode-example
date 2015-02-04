@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:workspace-toplevel-file">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "workspace-toplevelgroup">
+   </Group>
+   <FileRef
+      location = "group:foo/toplevel-project.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:bar/parent-project.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:workspace-external-project/workspace-external-project.xcodeproj">
+   </FileRef>
+</Workspace>
