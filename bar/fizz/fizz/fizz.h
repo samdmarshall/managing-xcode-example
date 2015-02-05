@@ -10,4 +10,6 @@
 
 @interface fizz : NSObject
 
+- (void)fizz;
+
 @end

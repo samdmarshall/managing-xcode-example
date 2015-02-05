@@ -10,4 +10,6 @@
 
 @interface bar : NSObject
 
+- (void)bar;
+
 @end

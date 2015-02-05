@@ -10,4 +10,8 @@
 
 @implementation fizz
 
+- (void)fizz {
+	NSLog(@"fizz");
+}
+
 @end

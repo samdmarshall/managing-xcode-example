@@ -10,4 +10,8 @@
 
 @implementation bar
 
+- (void)bar {
+	
+}
+
 @end
