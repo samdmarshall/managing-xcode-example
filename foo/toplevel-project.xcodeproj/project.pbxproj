@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22F32BF81A8295B200C65DF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F32BF71A8295B200C65DF9 /* main.m */; };
-		22F32CB81A85599800C65DF9 /* libbar-dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F32CB71A85599800C65DF9 /* libbar-dynamic.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F32CB81A85599800C65DF9 /* libbar-dynamic.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
