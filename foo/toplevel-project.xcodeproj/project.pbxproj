@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22F32BF81A8295B200C65DF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F32BF71A8295B200C65DF9 /* main.m */; };
+		22F32CB81A85599800C65DF9 /* libbar-dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F32CB71A85599800C65DF9 /* libbar-dynamic.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		22F32BF41A8295B200C65DF9 /* foo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = foo; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F32BF71A8295B200C65DF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22F32CB71A85599800C65DF9 /* libbar-dynamic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libbar-dynamic.dylib"; path = "../bar/build/Debug/libbar-dynamic.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F32CB81A85599800C65DF9 /* libbar-dynamic.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				22F32BF61A8295B200C65DF9 /* foo */,
+				22F32CB91A8559AC00C65DF9 /* Dependencies */,
 				22F32BF51A8295B200C65DF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +64,14 @@
 				22F32BF71A8295B200C65DF9 /* main.m */,
 			);
 			path = foo;
+			sourceTree = "<group>";
+		};
+		22F32CB91A8559AC00C65DF9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				22F32CB71A85599800C65DF9 /* libbar-dynamic.dylib */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +214,10 @@
 		22F32BFC1A8295B200C65DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sam/Desktop/example/bar/build/Debug,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +225,10 @@
 		22F32BFD1A8295B200C65DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sam/Desktop/example/bar/build/Debug,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

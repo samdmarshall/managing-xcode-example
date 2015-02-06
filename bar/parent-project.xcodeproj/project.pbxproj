@@ -43,6 +43,20 @@
 			remoteGlobalIDString = 22F32C241A8295F100C65DF9;
 			remoteInfo = "bar-dynamic";
 		};
+		22F32CB31A85594C00C65DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F32C751A82984300C65DF9 /* nested-project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22F32C5B1A82984300C65DF9;
+			remoteInfo = fizz;
+		};
+		22F32CB51A85596D00C65DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F32C751A82984300C65DF9 /* nested-project.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22F32C5A1A82984300C65DF9;
+			remoteInfo = fizz;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +112,14 @@
 			path = bar;
 			sourceTree = "<group>";
 		};
+		22F32CB01A85594C00C65DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22F32CB41A85594C00C65DF9 /* libfizz.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,6 +170,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				22F32CB61A85596D00C65DF9 /* PBXTargetDependency */,
 			);
 			name = "bar-dynamic";
 			productName = "bar-dynamic";
@@ -184,6 +207,12 @@
 			mainGroup = 22F32BFE1A8295CE00C65DF9;
 			productRefGroup = 22F32C081A8295CE00C65DF9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22F32CB01A85594C00C65DF9 /* Products */;
+					ProjectRef = 22F32C751A82984300C65DF9 /* nested-project.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22F32C061A8295CE00C65DF9 /* bar-static */,
@@ -192,6 +221,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		22F32CB41A85594C00C65DF9 /* libfizz.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfizz.a;
+			remoteRef = 22F32CB31A85594C00C65DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22F32C031A8295CE00C65DF9 /* Sources */ = {
@@ -222,6 +261,11 @@
 			isa = PBXTargetDependency;
 			target = 22F32C241A8295F100C65DF9 /* bar-dynamic */;
 			targetProxy = 22F32C501A82966C00C65DF9 /* PBXContainerItemProxy */;
+		};
+		22F32CB61A85596D00C65DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fizz;
+			targetProxy = 22F32CB51A85596D00C65DF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
