@@ -15,6 +15,7 @@
 		22F32C5B1A82984300C65DF9 /* libfizz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfizz.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F32C5E1A82984300C65DF9 /* fizz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fizz.h; sourceTree = "<group>"; };
 		22F32C601A82984300C65DF9 /* fizz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fizz.m; sourceTree = "<group>"; };
+		22F32CBA1A866C0500C65DF9 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 		22F32C521A82984300C65DF9 = {
 			isa = PBXGroup;
 			children = (
+				22F32CBA1A866C0500C65DF9 /* Debug.xcconfig */,
 				22F32C5D1A82984300C65DF9 /* fizz */,
 				22F32C5C1A82984300C65DF9 /* Products */,
 			);
@@ -129,6 +131,7 @@
 /* Begin XCBuildConfiguration section */
 		22F32C6D1A82984300C65DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F32CBA1A866C0500C65DF9 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
