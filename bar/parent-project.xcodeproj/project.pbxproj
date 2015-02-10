@@ -60,7 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22F32C071A8295CE00C65DF9 /* libbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libbar.a; path = "libbar-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F32C071A8295CE00C65DF9 /* libbar-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libbar-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F32C0A1A8295CE00C65DF9 /* bar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bar.h; sourceTree = "<group>"; };
 		22F32C0C1A8295CE00C65DF9 /* bar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bar.m; sourceTree = "<group>"; };
 		22F32C251A8295F100C65DF9 /* libbar-dynamic.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libbar-dynamic.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,7 @@
 		22F32C081A8295CE00C65DF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F32C071A8295CE00C65DF9 /* libbar.a */,
+				22F32C071A8295CE00C65DF9 /* libbar-static.a */,
 				22F32C251A8295F100C65DF9 /* libbar-dynamic.dylib */,
 			);
 			name = Products;
@@ -156,7 +156,7 @@
 			);
 			name = "bar-static";
 			productName = bar;
-			productReference = 22F32C071A8295CE00C65DF9 /* libbar.a */;
+			productReference = 22F32C071A8295CE00C65DF9 /* libbar-static.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		22F32C241A8295F100C65DF9 /* bar-dynamic */ = {
